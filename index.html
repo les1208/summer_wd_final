@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Retail Page</title>
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<!-- Logo -->
+	<header>
+		<img src="./images/RodeoJunkie.jpeg" alt="logo" class="nav-item">
+	</header>
+
+	<nav class="nav-main" id="navMain">
+	
+			<i onclick="openModal()" ; style="font-size:24px" class="fa">&#xf07a;</i>
+
+	</nav>
+
+	<!-- Modal -->
+	<section>
+		<div id="cartModal">
+			<div id="modal">
+				<span id="close" onclick="closeModal()" ;>x</span>
+				<h3>Cart Items</h3>
+				<div> <img class="productImg" src="./images/DragonBlack.jpeg" width="20%">
+					<p>Dragon Black Infant Boots</p>
+					<p>QTY: 1 <strong>Price:</strong> $85.99</p>
+					<p><strong>Total</strong> $87.56</p>
+				</div>
+			</div>
+	</section>
+
+
+	<div class="container">
+
+		<!-- left, product image -->
+		<div class="leftColumn">
+			<img src="./images/DragonBlack.jpeg" alt="boots">
+		</div>
+
+		<div class="rightColumn">
+
+			<!-- top right, product info + buttons -->
+			<div class="productInfo">
+				<span>Boots</span>
+				<h2 class="itemName">Dragon Black(Infant)</h2>
+				<p>Sizes 3, 4, 5, 6, 7 are considered infant and run small. Size up 1-2 sizes. These are rubber hard soles.
+					The inside where the leg is placed is genuine soft leather.
+					These are handmade so there will be some small imperfections. </p>
+			</div>
+
+			<div id="priceCart">
+				<span id="price">85.99</span>
+				<button type="button" class="cart-btn" onclick="addToCart()">Add To Cart</button>
+				<a href="#review" class="reviews-btn">Product Reviews</a>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- bottom center, under container product description -->
+	<div id="productReviews">
+		<h2 id="review">Customer Reviews</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequatur voluptatibus voluptatum ipsam
+			adipisci voluptate assumenda nostrum dolor. Commodi illo voluptatem animi quasi nihil. Repellendus accusantium cum
+			corporis atque molestiae.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid incidunt, id soluta aut fugit a, at sit, explicabo numquam iusto doloremque necessitatibus cum dolorem. Quas rerum amet quibusdam nulla deleniti.</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, mollitia vitae rem aperiam odit harum a voluptatem illo facilis reprehenderit aspernatur illum, eos iusto eligendi maiores architecto inventore provident fuga?</p>
+	</div>
+
+</body>
+<script src="./app.js"></script>
+
+</html>
