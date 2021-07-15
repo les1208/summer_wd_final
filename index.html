@@ -18,8 +18,8 @@
 	</header>
 
 	<nav class="nav-main" id="navMain">
-	
-			<i onclick="openModal()" ; style="font-size:24px" class="fa">&#xf07a;</i>
+
+		<i onclick="openModal()" ; style="font-size:24px" class="fa">&#xf07a;</i>
 
 	</nav>
 
@@ -29,9 +29,9 @@
 			<div id="modal">
 				<span id="close" onclick="closeModal()" ;>x</span>
 				<h3>Cart Items</h3>
-				<div> <img class="productImg" src="./images/DragonBlack.jpeg" width="20%">
+				<div>
+					<img class="productImg" src="./images/DragonBlack.jpeg" width="10%">
 					<p>Dragon Black Infant Boots</p>
-					<p>QTY: 1 <strong>Price:</strong> $85.99</p>
 					<p><strong>Total</strong> $87.56</p>
 				</div>
 			</div>
@@ -59,7 +59,7 @@
 			<div id="priceCart">
 				<span id="price">85.99</span>
 				<button type="button" class="cart-btn" onclick="addToCart()">Add To Cart</button>
-				<a href="#review" class="reviews-btn">Product Reviews</a>
+				<button class="reviews-btn"> <a href="#review" id="reviews">Product Reviews</a></button>
 
 			</div>
 
@@ -69,14 +69,17 @@
 	<!-- bottom center, under container product description -->
 	<div id="productReviews">
 		<h2 id="review">Customer Reviews</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequatur voluptatibus voluptatum ipsam
+		<p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, consequatur voluptatibus voluptatum ipsam
 			adipisci voluptate assumenda nostrum dolor. Commodi illo voluptatem animi quasi nihil. Repellendus accusantium cum
 			corporis atque molestiae.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid incidunt, id soluta aut fugit a, at sit, explicabo numquam iusto doloremque necessitatibus cum dolorem. Quas rerum amet quibusdam nulla deleniti.</p>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, mollitia vitae rem aperiam odit harum a voluptatem illo facilis reprehenderit aspernatur illum, eos iusto eligendi maiores architecto inventore provident fuga?</p>
+		<p>-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid incidunt, id soluta aut fugit a, at sit,
+			explicabo numquam iusto doloremque necessitatibus cum dolorem. Quas rerum amet quibusdam nulla deleniti.</p>
+		<p>-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, mollitia vitae rem aperiam odit harum a
+			voluptatem illo facilis reprehenderit aspernatur illum, eos iusto eligendi maiores architecto inventore provident
+			fuga?</p>
+			<p>-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, eum placeat. Ex illo vero cupiditate modi voluptatum placeat maxime distinctio minus, obcaecati laboriosam, non ducimus nulla sed cum inventore vitae!</p>
 	</div>
 
 </body>
 <script src="./app.js"></script>
-
 </html>
